@@ -75,6 +75,7 @@ class Application(tk.Frame):
 
     def __execute_ft(self, event):
         wf = float(self.entry_wf.get())
+        print(wf)
         filter_img(self.imgpath, wf)
 
         self.__limpiar_frame()
