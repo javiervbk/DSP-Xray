@@ -6,7 +6,7 @@ from imgdft import filter_img
 
 def start():
     root = tk.Tk()
-    root.title('Photorestore')
+    root.title('RayosX')
 
     Application(root)
 
@@ -74,7 +74,7 @@ class Application(tk.Frame):
         lbl_image.pack(side=tk.BOTTOM, fill=tk.BOTH, expand=tk.YES)
 
     def __execute_ft(self, event):
-        wf = int(self.entry_wf.get())
+        wf = float(self.entry_wf.get())
         filter_img(self.imgpath, wf)
 
         self.__limpiar_frame()
